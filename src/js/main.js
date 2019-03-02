@@ -10,7 +10,7 @@ close.addEventListener('click', function(){
   modal.classList.remove('modal_active');  
 })
 
-setTimeout(function(){
+setInterval(function(){
   modal.classList.remove('modal_active');
 },5000);  
 clearTimeout();
