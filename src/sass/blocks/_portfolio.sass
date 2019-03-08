@@ -2,7 +2,6 @@
   background: $bc url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50%
   &__title
-    
     margin: auto
     margin-bottom: 100px
   &__arrows
@@ -10,7 +9,16 @@
     margin: auto
     margin-top: 68px
     display: flex
-    justify-content: space-between
+    justify-content: space-between   
 .slider
+  &__item
+    outline: none
   &__image
     margin: auto
+@media (max-width: 768px)
+  .section
+    padding: 43px 0
+  .portfolio
+    &__title
+      margin-bottom: 41px
+    
