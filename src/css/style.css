@@ -158,7 +158,7 @@ img {
   margin: 0;
   position: fixed;
   bottom: 50px;
-  width: 100px;
+  width: 90px;
   color: #333333;
   line-height: 30px;
   text-decoration: none;
@@ -246,11 +246,10 @@ img {
   .section-subtitle {
     font-size: 16px;
   }
-}
-
-.arrows__left:hover, .arrows__right:hover {
-  cursor: pointer;
-  background: #ffdd3d;
+  .arrows__left:hover, .arrows__right:hover {
+    cursor: pointer;
+    background: #ffdd3d;
+  }
 }
 
 .navbar {
@@ -765,7 +764,7 @@ button {
 .brif {
   background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: repeat-y, no-repeat;
 }
 
@@ -799,6 +798,8 @@ button {
   max-width: 370px;
   margin-top: 15px;
   margin-bottom: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .interview {
@@ -841,8 +842,8 @@ button {
   text-align: center;
   line-height: 35px;
   font-size: 14px;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  max-height: 35px;
   border: 2px solid #333333;
   border-radius: 50%;
 }
@@ -901,10 +902,10 @@ button {
 
 @media (max-width: 768px) {
   .brif {
-    padding: 60px 0;
+    padding: 48px 0;
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 50%, cover;
+    background-size: 100% 43%, cover;
     background-repeat: repeat-x, no-repeat;
   }
   .brif-block {
@@ -914,10 +915,24 @@ button {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 80px;
+    margin-top: 30px;
+    padding-left: 0;
   }
-  .brif__form__title {
-    width: 260px;
+  .brif__button {
+    font-size: 14px;
+  }
+  .interview {
+    padding-bottom: 25px;
+  }
+  .interview__title {
+    font-size: 18px;
+  }
+  .form {
+    margin: auto;
+    padding-left: 0;
+  }
+  .form__title {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
